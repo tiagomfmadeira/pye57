@@ -8,6 +8,22 @@
 
 Python wrapper of [LibE57Format](https://github.com/asmaloney/libE57Format) to read and write .e57 point cloud files
 
+## Installation
+
+`pip install -e /srv/pkg`
+
+where /srv/pkg is the top-level directory where 'setup.py' can be found.
+
+## Building notes
+
+### Windows
+
+Binaries of xerces-c can be obtained from conda using: `conda install xerces-c`
+
+### Linux
+
+Install libxerces-c-dev before installing.
+
 ## Example usage
 
 ```python
@@ -67,22 +83,3 @@ data3d = root["data3D"]
 scan_0 = data3d[0]
 translation_x = scan_0["pose"]["translation"]["x"]
 ```
-
-
-## Installation
-
-`pip install pye57`
-
-If you're on Windows and using python 3.5 or 3.6, wheels are available.
-
-Otherwise, see the building notes below.
-
-## Building notes
-
-### Windows
-
-Binaries of xerces-c can be obtained from conda using: `conda install xerces-c`
-
-### Linux
-
-Install libxerces-c-dev before installing.
