@@ -10,7 +10,7 @@ Python wrapper of [LibE57Format](https://github.com/asmaloney/libE57Format) to r
 
 ## Installation
 
-`git clone https://github.com/tiagomfmadeira/pye57.git`
+`git clone --recursive https://github.com/tiagomfmadeira/pye57.git`
 
 `pip install /srv/pkg/pye57`
 
