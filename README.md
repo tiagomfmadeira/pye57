@@ -10,9 +10,11 @@ Python wrapper of [LibE57Format](https://github.com/asmaloney/libE57Format) to r
 
 ## Installation
 
-`pip install -e /srv/pkg`
+`git clone https://github.com/tiagomfmadeira/pye57.git`
 
-where /srv/pkg is the top-level directory where 'setup.py' can be found.
+`pip install /srv/pkg/pye57`
+
+where /srv/pkg/pye57 is the top-level directory, containing setup.py.
 
 ## Building notes
 
