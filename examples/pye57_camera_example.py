@@ -9,6 +9,10 @@ if __name__ == "__main__":
     imf = e57.image_file
     root = imf.root()
 
+    print("File loaded successfully!")
+    if not root['images2D']:
+        print("File contains no 2D images. Exiting...")
+
     for image_idx, image2D in enumerate(root['images2D']):
         print("\n\n#########################################")
         print("## Camera " + str(image_idx))
