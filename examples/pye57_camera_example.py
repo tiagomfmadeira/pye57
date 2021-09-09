@@ -43,13 +43,15 @@ if __name__ == "__main__":
         pinhole = image2D['pinholeRepresentation']
 
         focal_length = pinhole['focalLength'].value()
+        pixel_height = pinhole['pixelHeight'].value()
+        pixel_width = pinhole['pixelWidth'].value()
         principal_point_x = pinhole['principalPointX'].value()
         principal_point_y = pinhole['principalPointY'].value()
 
         K = np.zeros((3, 3))
         K[2, 2] = 1
-        K[0, 0] = focal_length
-        K[1, 1] = focal_length
+        K[0, 0] = focal_length / pixel_width
+        K[1, 1] = focal_length / pixel_height
         K[0, 2] = principal_point_x
         K[1, 2] = principal_point_y
 
