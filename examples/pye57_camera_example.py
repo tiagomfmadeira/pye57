@@ -59,7 +59,6 @@ if __name__ == "__main__":
         print(K)
 
         # Get picture from blob
-        # Blobnode read and write implemented in my pye57 fork: https://github.com/tiagomfmadeira/pye57
         jpeg_image = pinhole['jpegImage']
         jpeg_image_data = np.zeros(shape=jpeg_image.byteCount(), dtype=np.uint8)
         jpeg_image.read(jpeg_image_data, 0, jpeg_image.byteCount())
